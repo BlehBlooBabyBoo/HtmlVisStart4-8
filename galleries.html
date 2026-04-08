@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore Ethan's AI Photography galleries for school and sports sessions. Sample group, individual, and action photography.">
+  <meta property="og:title" content="Ethan's AI Photography Galleries" />
+  <meta property="og:description" content="Portfolio of school and sports photography sessions. Book your session today." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=1200&q=80&auto=format&fit=crop" />
+  <title>Galleries — Ethan's AI Photography</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX-X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-XXXXXX-X');
+  </script>
+</head>
+<body>
+  <div class="scroll-progress"></div>
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div>Call us: <a href="tel:+15555555555">(555) 555-5555</a> · <a href="mailto:info@ethansai.example">info@ethansai.example</a></div>
+      <div><a class="top-btn" href="contact.html">Book Now</a> <a class="top-btn outline" href="#faq">FAQ</a></div>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Ethan's AI Photography</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="galleries.html">Galleries</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="photography.html">Photography</a>
+        <a href="contact.html" class="cta">Contact</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container reveal">
+    <h1>Galleries</h1>
+    <p class="muted">Filter by category: <button data-filter="all" class="filter active">All</button> <button data-filter="school" class="filter">School</button> <button data-filter="sports" class="filter">Sports</button> <button data-filter="teams" class="filter">Teams</button></p>
+    <input type="text" id="search" placeholder="Search galleries..." style="width:100%;padding:0.5rem;margin-bottom:1rem;border:1px solid var(--border);border-radius:0.5rem;background:var(--surface);color:var(--text);">
+
+    <div class="gallery-grid" id="gallery">
+      <figure data-category="school"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=60&auto=format&fit=crop" alt="Student portrait" loading="lazy"><figcaption>First grade portrait</figcaption></figure>
+      <figure data-category="sports"><img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800&q=60&auto=format&fit=crop" alt="Sport action" loading="lazy"><figcaption>Action shot</figcaption></figure>
+      <figure data-category="teams"><img src="https://images.unsplash.com/photo-1507608869276-9a46f98a2f3a?w=800&q=60&auto=format&fit=crop" alt="Team photo" loading="lazy"><figcaption>Varsity team</figcaption></figure>
+      <figure data-category="school"><img src="https://images.unsplash.com/photo-1534081333815-ae5019106622?w=800&q=60&auto=format&fit=crop" alt="Preschool" loading="lazy"><figcaption>Preschool group</figcaption></figure>
+      <figure data-category="school"><img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=60&auto=format&fit=crop" alt="Classroom" loading="lazy"><figcaption>Classroom session</figcaption></figure>
+      <figure data-category="sports"><img src="https://images.unsplash.com/photo-1574623452334-1e0ac2b3ccb4?w=800&q=60&auto=format&fit=crop" alt="Basketball" loading="lazy"><figcaption>Basketball action</figcaption></figure>
+      <figure data-category="teams"><img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&q=60&auto=format&fit=crop" alt="Soccer team" loading="lazy"><figcaption>Soccer team photo</figcaption></figure>
+      <figure data-category="school"><img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=800&q=60&auto=format&fit=crop" alt="Graduation" loading="lazy"><figcaption>Graduation portrait</figcaption></figure>
+      <figure data-category="sports"><img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&q=60&auto=format&fit=crop" alt="Football" loading="lazy"><figcaption>Football game</figcaption></figure>
+      <figure data-category="teams"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=60&auto=format&fit=crop" alt="Baseball team" loading="lazy"><figcaption>Baseball team</figcaption></figure>
+      <figure data-category="school"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=60&auto=format&fit=crop" alt="Art class" loading="lazy"><figcaption>Art class photo</figcaption></figure>
+      <figure data-category="sports"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=60&auto=format&fit=crop" alt="Swimming" loading="lazy"><figcaption>Swimming competition</figcaption></figure>
+    </div>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true"><button class="close">×</button><button class="prev">‹</button><button class="next">›</button><img src="" alt="" loading="lazy"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year-2"></span> Ethan's AI Photography</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
